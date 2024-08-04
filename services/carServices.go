@@ -9,6 +9,7 @@ func CreateCar(car models.Car) error {
     return config.DB.Create(&car).Error
 }
 
+//
 func GetCars() ([]models.Car, error) {
     var cars []models.Car
     err := config.DB.Find(&cars).Error
